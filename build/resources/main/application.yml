@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: PageEventCollector
+
+
+
+---
+spring:
+  profiles:
+    active: local
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: pageView
+      username: root
+      password: 0000
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 12345678
+    url: jdbc://localhost:3306/yh_mysql
+
+#---
+#spring:
+#  profiles:
+#    active: dev
+#  data:
+#    mongodb:
+#      uri: mongodb://localhost:20174/pageView
+#      username: root
+#      password: 0000
+#      database: pageView
+#---
+#spring:
+#  profiles:
+#    active: prod
+#  data:
+#    mongodb:
+#      uri: mongo://localhost:20174
+#      username: root
+#      password: 0000
