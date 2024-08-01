@@ -13,3 +13,5 @@
 ![pageEventLogger](https://github.com/user-attachments/assets/4d73e92e-a695-469f-885e-041d3dd29590)
 
   
+# Developing Try-Fix 
+- SpringBatch 까지 사용하기에는 대용량 데이터 반복 처리가 아닌것 같다 판단 =>  스프링프레임웍 context 라이브러리에 내장되어 있는 Schedule 기능으로 변경하자.(나중에 재시도 처리 혹은 모니터링이 필요할 때 추가 계발해보자..)
