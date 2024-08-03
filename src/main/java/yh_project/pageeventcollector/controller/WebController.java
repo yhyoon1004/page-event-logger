@@ -6,10 +6,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class WebController {
-    @GetMapping({"/","/index*"})
+    @GetMapping("/")
     public String main(Model model) {
         model.addAttribute("Hello", "World");
         return "index";
+    }
+    @GetMapping("/index*")
+    public String indexTemplate(Model model) {
+        model.addAttribute("Hello", "World");
+        return "index-template";
     }
 
     /**
