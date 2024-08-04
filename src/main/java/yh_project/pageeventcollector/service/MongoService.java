@@ -10,7 +10,7 @@ import yh_project.pageeventcollector.repository.mongo.collection.pageEvent.PageE
 public class MongoService {
     private final MongoRepository mongoRepository;
     public void insertPageEvent(PageEvent event) {
-        mongoRepository.insert(event);
+        mongoRepository.save(event);
     }
 
 

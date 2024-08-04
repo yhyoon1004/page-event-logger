@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
-@Document(collection = "page_event_logger")
+@Document(collection = "pageView")
 public class PageEvent {
     @Id
     private String id;
