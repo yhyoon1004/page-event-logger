@@ -14,5 +14,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 12345678
-    url: jdbc://localhost:3306/yh_mysql
-
+    url: jdbc:mysql://localhost:3306/yh_mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
