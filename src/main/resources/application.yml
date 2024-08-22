@@ -9,7 +9,7 @@ spring:
     active: local
   data:
     mongodb:
-      uri: mongodb://root:0000@localhost:27017/yh_db
+      uri: mongodb://root:12345678@localhost:27017/yh_mongo
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
